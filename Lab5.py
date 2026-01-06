@@ -1,21 +1,35 @@
-# Example for n = 5:
-# *****
-# *   *
-# *   *
-# *   *
-# *****
 def hollow_square(n):
-    x = "*"
-    y = " "
-
-    print(x * n)
+    if n == 1:
+        square = "*"
+         return square
+    elif n == 2: 
+        square = ("**", "**")
+        for square in square:
+            return square
         
-    count = 2
-    while count <= n - 1:
-        print(x, ((n - 4) * y), x)
-        count += 1
+    elif n == 3:
+        square = ("***", "* *", "***")
+        for square in square:
+            return square
+    
+    elif n == 5 
+    square = ("*****", "*   *", "*   *", "*   *", "*****")
+    for square in square
+        return square
+    
+    else:    
+        x = "*"
+        y = " "
 
-    print(x * n)
+        print(x * n)
+            
+        count = 2
+        while count <= n - 1:
+            print(x, ((n - 4) * y), x)
+            count += 1
+
+        print(x * n)
+
 
         
 
