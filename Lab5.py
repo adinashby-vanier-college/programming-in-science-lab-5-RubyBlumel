@@ -60,8 +60,5 @@ def number_pattern(n):
 # def centered_star_pyramid(n):
 #     return ""
 
-# result = hollow_square(5)
-# print(result)
 
-result = number_pattern(4)
-print(result)
+
