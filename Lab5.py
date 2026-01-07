@@ -10,82 +10,39 @@ def hollow_square(n):
         square = "*"
         return square
    
-    elif n == 3:
-        square = ("***", "* *", "***")
-        for square in square:
-            return square
+    
     else:    
         x = "*"
         y = " " 
         mult = x * n 
-        count = 1
-        while count <= n:
-             result1 = (f"{x}{y * (n - 2)}{x}")
-             count += 1
 
-        return f"{mult}\n{result1}\n{mult}"
-    #     mult = ((n - 2) * y) 
+        def new():
+            return f"{x}{y * (n - 2)}{x}\n"
         
-    # for mult in mult:
-    #     mult = [n * mult]
 
-            
-            
-            
-    # result1 = f"{x}{mult}{x}"
-           
-            
-        
-    # return f"{result2}\n{result1}\n{result2}"
-            
-            
-           
-
-       
-
-a = hollow_square(5)
-print(a)
-
+    return f"{mult}\n{new() * (n - 2)}{mult}"
         
 
 # # 1
 # # 12
 # # 123
 # # 1234
-# def number_pattern(n):
-#     return ""
+def number_pattern(n):
+
+    
+    return result
 
 # # Example: For n = 5, sum = 1 + 2 + 3 + 4 + 5 = 15
-# def sum_of_natural_numbers(n):
-#     return ""
+def sum_of_natural_numbers(n):
+    return ""
 
 # # Example for n = 4:
 # #    *
 # #   ***
 # #  *****
 # # *******
-# def centered_star_pyramid(n):
-#     return ""
+def centered_star_pyramid(n):
+    return ""
 
-
-        
-
-# # 1
-# # 12
-# # 123
-# # 1234
-# def number_pattern(n):
-#     return ""
-
-# # Example: For n = 5, sum = 1 + 2 + 3 + 4 + 5 = 15
-# def sum_of_natural_numbers(n):
-#     return ""
-
-# # Example for n = 4:
-# #    *
-# #   ***
-# #  *****
-# # *******
-# def centered_star_pyramid(n):
-# #     return ""
-
+result = number_pattern(4)
+print(result)
