@@ -17,20 +17,26 @@ def hollow_square(n):
     else:    
         x = "*"
         y = " " 
-        result2 = x * n 
-        mult = ((n - 2) * y) 
+        mult = x * n 
+        count = 1
+        while count <= n:
+             result1 = (f"{x}{y * (n - 2)}{x}")
+             count += 1
+
+        return f"{mult}\n{result1}\n{mult}"
+    #     mult = ((n - 2) * y) 
         
-    for mult in mult:
-        mult = [n * mult]
+    # for mult in mult:
+    #     mult = [n * mult]
 
             
             
             
-    result1 = f"{x}{mult}{x}"
+    # result1 = f"{x}{mult}{x}"
            
             
         
-    return f"{result2}\n{result1}\n{result2}"
+    # return f"{result2}\n{result1}\n{result2}"
             
             
            
