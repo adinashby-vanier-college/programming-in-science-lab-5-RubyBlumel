@@ -40,7 +40,7 @@ def number_pattern(n):
     
 
 
-   return result
+   return result.rstrip()
 
  
 
@@ -48,17 +48,28 @@ def number_pattern(n):
       
 
 
-# # # Example: For n = 5, sum = 1 + 2 + 3 + 4 + 5 = 15
-# def sum_of_natural_numbers(n):
-#     return ""
-
-# # # Example for n = 4:
-# # #    *
-# # #   ***
-# # #  *****
-# # # *******
-# def centered_star_pyramid(n):
-#     return ""
-
-
+# # Example: For n = 5, sum = 1 + 2 + 3 + 4 + 5 = 15
+def sum_of_natural_numbers(n):
+    count = 0
+    for i in range(1, (n + 1)):
+        count += i
+    return count
+    
+    
+# # Example for n = 4:
+# #    *
+# #   ***
+# #  *****
+# # *******
+def centered_star_pyramid(n):
+    result = ""
+    for i in range(n):
+        for j in range(n - i - 1):
+            result += " "
+        for k in range((i * 2) + 1):
+            result += "*"
+        
+    
+        result += "\n"
+    return result.rstrip()
 
